@@ -1,0 +1,20 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background: linear-gradient(to left, #111111, #132d5f, #111111);
+    color: rgb(156, 156, 156);
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Position relative to allow absolute positioning of the pseudo element */
+    margin: 0 auto; /* Center the title */
+    z-index: -1;
+    width: 30%;
+    border-radius: 80% 80% 0% 0%; /* curves upward into page */
+    overflow: hidden; /* Hide the overflow from the pseudo element */
+}
