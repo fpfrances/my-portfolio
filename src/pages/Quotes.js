@@ -22,7 +22,8 @@ const Quote = () => {
         <button className="about-link">About Me</button>
       </Link>
     </div>
-    <div className="center-column">
+    <div className="center-column"></div>
+    <div className="right-column">
         <h3>Quotes</h3>
         <ul>
           <li>Quote 1</li>
