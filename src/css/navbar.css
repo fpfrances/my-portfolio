@@ -3,18 +3,34 @@ html, body {
     padding: 0;
 }
 
+.banner {
+    width: 600px;
+    height: auto;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    animation: logoPulse 4s ease-in-out infinite;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 20px;
+}
+
 .title {
-    background-color: #111111;
-    color: #b6b6b6;
-    font-size: 30px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-shadow: #b6b6b6 10px 10px 20px;
+    flex: 1; /* fills space between logo and right edge */
     text-align: center;
-    padding: 30px;
-    position: relative; /* Position relative to allow absolute positioning of the pseudo element */
-    z-index: -1;
-    width: 15%;
-    border-radius: 0% 100% 100% 0%; /* curves upward into page */
-    overflow: hidden; /* Hide the overflow from the pseudo element */
+}
+
+@keyframes logoPulse {
+    0% {
+    transform: scale(0.7);
+    }
+    50% {
+    transform: scale(1);
+    }
+    100% {
+    transform: scale(0.7);
+    }
 }
